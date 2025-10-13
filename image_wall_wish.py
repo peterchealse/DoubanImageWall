@@ -177,7 +177,7 @@ for j in range(0, _HEIGHT, _CELL_HEIGHT):
 
 result.thumbnail((args.max_width, args.max_height), Image.LANCZOS)
 os.makedirs(_OUTPUT, exist_ok=True)
-result.save(f'{_OUTPUT}/{id}_{args.mode}.jpg', optimize=True, quaility=80)
+result.save(f'{_OUTPUT}/{id}_{args.mode}_wish.jpg', optimize=True, quaility=90)
 
 if len(cache_imgs) > args.threshold:
     for cached_img, used in cache_imgs.items():
